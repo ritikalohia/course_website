@@ -7,7 +7,169 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar{
+  background-color: #234874;
+}
+
+.navbar-collapse{
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand{
+  font-size: 2.1rem !important;
+  color: #565387 !important;
+  font-weight: 600;
+}
+
+
+
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu-active{
+  font-weight: bold;
+  border-bottom: 1px solid #3498db !important;
+  color: #3498db !important;
+}
+
+.navbar a:hover{
+  color: #3498db !important; 
+}
+
+
+@media(max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+  #header{
+    margin-bottom: 150px;
+  }
+  .navbar-collapse{
+    display: block;
+    justify-content: start;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/********Home********/
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name{
+  color: #3498db;
+}
+
+#header h2{
+  color: #484848;
+  font-size: 24px;
+}
+
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover{
+  background-color: #3498db;
+  color: #fff;
+} 
+
+.header-img{
+  text-align: right;
+}
+
+#header .animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+/*footer*/
+footer p {
+  padding: 1vh 0 1vh 0;
+  margin: 0; 
+  background-color: #2344;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom:0;
+}
+
+/*Cards*/
+.img-card{
+  height: 300px;
+  width: auto;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.card-img-top{
+  object-fit: fill;
+}
+
+.btn{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: #3498db;
+  color: #fff;
+}
+
+.main-heading{
+  color: #3498db;
 }
