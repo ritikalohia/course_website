@@ -12,7 +12,7 @@ const Home = () => {
         imgsrc={web} 
         visit="/service" 
         btname="Get started"
-        content="We are the team of talented developer making websites" />
+        content="Learn grown with" />
       </>
     );
   };
